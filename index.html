@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASER | Asesoría Integral para Empresas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" aria-label="Logo ASER">
+                    <rect x="20" y="20" width="60" height="60" rx="10" fill="#1e3a8a"/>
+                    <path d="M35,35 L65,35 L65,45 L50,60 L35,45 Z" fill="#f97316"/>
+                    <text x="50" y="85" text-anchor="middle" font-family="Arial" font-size="20" fill="#1e3a8a">ASER</text>
+                </svg>
+                <h1>ASER</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contratacion">Contratación</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#" class="btn">Acceso Clientes</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Impulsa tu negocio hoy</h2>
+            <p>Asesoramiento integral para emprendedores y empresarios en todas las etapas de tu empresa.</p>
+            <div class="hero-buttons">
+                <a href="#contratacion" class="btn">Contratar Asesor</a>
+                <a href="#servicios" class="btn btn-outline">Conoce nuestros servicios</a>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Empresas asesoradas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Tasa de satisfacción</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Asistencia disponible</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="services" id="servicios">
+        <div class="section-title">
+            <h2>Nuestros Servicios</h2>
+            <p>Te acompañamos en cada etapa del crecimiento de tu empresa.</p>
+        </div>
+        
+        <div class="cards-container">
+            <div class="card fade-in">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Etapa Idea → Validación</h3>
+                    <p>Analizamos la viabilidad de tu idea de negocio y modelo de negocio.</p>
+                    <a href="#" class="btn">Más información</a>
+                </div>
+            </div>
+            
+            <div class="card fade-in">
+                <div class="card-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Etapa Startup → Legalización</h3>
+                    <p>Te ayudamos con la constitución legal, trámites administrativos y primeros contratos.</p>
+                    <a href="#" class="btn">Más información</a>
+                </div>
+            </div>
+            
+            <div class="card fade-in">
+                <div class="card-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Etapa Crecimiento → Escalabilidad</h3>
+                    <p>Optimizamos tus procesos, estructura organizacional y expansión a nuevos mercados.</p>
+                    <a href="#" class="btn">Más información</a>
+                </div>
+            </div>
+            
+            <div class="card fade-in">
+                <div class="card-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Etapa Optimización → Automatización</h3>
+                    <p>Implementamos sistemas de gestión, análisis de datos y automatización de procesos.</p>
+                    <a href="#" class="btn">Más información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contratación -->
+    <section class="hiring" id="contratacion">
+        <div class="section-title">
+            <h2>Contrata Profesionales por Hora/Día</h2>
+            <p>Flexibilidad laboral sin costes adicionales. Paga solo por las horas trabajadas.</p>
+        </div>
+        
+        <div class="hiring-form">
+            <form id="contratacionForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">DNI/NIE</label>
+                        <input type="text" id="dni" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="perfil">Perfil profesional requerido</label>
+                        <select id="perfil" class="form-control" required>
+                            <option value="">Seleccione un perfil</option>
+                            <option value="contable">Contable/Financiero</option>
+                            <option value="legal">Asesor Legal</option>
+                            <option value="marketing">Especialista Marketing</option>
+                            <option value="tecnologia">Consultor Tecnológico</option>
+                            <option value="operaciones">Gestor de Operaciones</option>
+                            <option value="rrhh">Especialista RRHH</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="horas">Horas requeridas</label>
+                        <input type="number" id="horas" class="form-control" min="1" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha">Fecha de inicio</label>
+                        <input type="date" id="fecha" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="presupuesto">Presupuesto por hora (€)</label>
+                        <input type="number" id="presupuesto" class="form-control" min="15" step="5" required>
+                    </div>
+                </div>
+                
+                <button type="button" id="calcularBtn" class="btn">Calcular Coste Total</button>
+                
+                <div id="resultadoCalculo" class="calculation-result">
+                    <p>Coste estimado: <span id="costeTotal">0</span> €</p>
+                    <p>IVA (21%) incluido</p>
+                </div>
+                
+                <div class="legal-disclaimer">
+                    <p><strong>Nota legal:</strong> Este servicio de contratación se realiza bajo la modalidad de servicios profesionales temporales, conforme al artículo 11 del Estatuto de los Trabajadores español. No incluye cotizaciones a la Seguridad Social ni otros beneficios laborales.</p>
+                </div>
+                
+                <button type="submit" class="btn btn-block">Solicitar Profesional</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials" id="testimonios">
+        <div class="section-title">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <p>Empresarios y emprendedores que han confiado en nuestros servicios.</p>
+        </div>
+        
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    "Gracias a ASER pude validar mi idea de negocio y lanzar mi startup con todas las garantías legales. Su asesoramiento financiero fue clave para conseguir inversión."
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente satisfecho">
+                    <div class="author-info">
+                        <h4>María G.</h4>
+                        <p>CEO de FoodTech Startup</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    "Contratamos un consultor de operaciones por 40 horas y revolucionó nuestros procesos. La modalidad por horas nos permitió ajustar costes sin comprometer calidad."
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cliente satisfecho">
+                    <div class="author-info">
+                        <h4>Carlos R.</h4>
+                        <p>Director de Logística</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    "El chatbot resolvió mis dudas inmediatas sobre fiscalidad y el asesor personal me ayudó a optimizar la estructura de mi empresa familiar. Servicio 10/10."
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente satisfecho">
+                    <div class="author-info">
+                        <h4>Sofía M.</h4>
+                        <p>Gerente de Empresa Familiar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>ASER</h3>
+                <p>Tu partner en el crecimiento empresarial. Asesoramiento integral para todas las etapas de tu negocio.</p>
+                <p>CIF: B12345678</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Enlaces legales</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Protección de datos (LOPD-GDD)</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Condiciones de contratación</a></li>
+                    <li><a href="#">Ley 10/2010 de prevención del blanqueo</a></li>
+                    <li><a href="#">Estatuto de los Trabajadores</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <ul class="footer-links">
+                    <li><a href="tel:+34912345678"><i class="fas fa-phone"></i> +34 912 345 678</a></li>
+                    <li><a href="mailto:info@aser.com"><i class="fas fa-envelope"></i> info@aser.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Calle Empresarial, 123</li>
+                    <li>28001 Madrid, España</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <form class="contact-form">
+                    <input type="email" placeholder="Tu email" required>
+                    <textarea placeholder="Tu mensaje"></textarea>
+                    <button type="submit" class="btn">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; <span id="current-year"></span> ASER. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-btn" id="chatbotBtn">
+            <i class="fas fa-comments"></i>
+        </div>
+        
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>Asistente Virtual</h3>
+                <button class="chatbot-close" id="chatbotClose">&times;</button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    ¡Hola! Soy el asistente virtual de ASER. ¿En qué puedo ayudarte hoy?
+                </div>
+                <div class="message bot-message">
+                    Puedes preguntarme sobre:
+                    <div class="quick-questions">
+                        <div class="quick-question" data-question="legal">Trámites legales iniciales</div>
+                        <div class="quick-question" data-question="contratacion">Contratación por horas</div>
+                        <div class="quick-question" data-question="costes">Costes de constitución</div>
+                        <div class="quick-question" data-question="fiscalidad">Obligaciones fiscales</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Escribe tu pregunta...">
+                <button id="chatbotSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
